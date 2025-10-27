@@ -258,6 +258,68 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 70378176}
   m_CullTransparentMesh: 1
+--- !u!1 &82856814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 82856815}
+  m_Layer: 0
+  m_Name: ----------Character----------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &82856815
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 82856814}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.886086, y: -2.6735957, z: -18.252735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &95858230
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 95858231}
+  m_Layer: 0
+  m_Name: ----------Item----------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &95858231
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 95858230}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.886086, y: -2.6735957, z: -18.252735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &410087039
 GameObject:
   m_ObjectHideFlags: 0
@@ -931,6 +993,37 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 904908015}
   m_CullTransparentMesh: 1
+--- !u!1 &956875955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 956875956}
+  m_Layer: 0
+  m_Name: ----------Helper----------
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &956875956
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 956875955}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17.886086, y: -2.6735957, z: -18.252735}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1012951680
 GameObject:
   m_ObjectHideFlags: 0
@@ -941,7 +1034,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1012951681}
   m_Layer: 0
-  m_Name: -----Manager-----
+  m_Name: ----------Manager----------
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1587,7 +1680,7 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.size
-      value: 10
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1607,17 +1700,17 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[3].Stage
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[4].Stage
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].Stage
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1641,13 +1734,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
+      propertyPath: Skills.Array.data[10].Stage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[11].Stage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[12].Stage
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
       propertyPath: Skills.Array.data[0].Priority
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[1].DirInput
-      value: s
+      value: w
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1682,7 +1790,7 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[4].DirInput
-      value: ad
+      value: w
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1692,27 +1800,27 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].DirInput
-      value: ad
+      value: w
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].Priority
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[6].DirInput
-      value: sad
+      value: s
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[6].Priority
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[7].DirInput
-      value: w
+      value: ad
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1732,7 +1840,7 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[9].DirInput
-      value: w
+      value: sad
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1742,62 +1850,92 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[0].BodyInput
-      value: ui
+      value: i
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[0].SkillName
-      value: upper_hand
+      value: upper_hand_R
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[10].DirInput
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[10].Priority
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[11].DirInput
+      value: ad
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[11].Priority
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[12].DirInput
+      value: w
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[12].Priority
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[1].BodyInput
-      value: jkl
+      value: u
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[1].SkillName
-      value: squat_down
+      value: upper_hand_L
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[2].BodyInput
-      value: uij
-      objectReference: {fileID: 0}
-    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
-        type: 3}
-      propertyPath: Skills.Array.data[2].SkillName
-      value: upper_hand_and_leg
-      objectReference: {fileID: 0}
-    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
-        type: 3}
-      propertyPath: Skills.Array.data[3].BodyInput
       value: ui
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
+      propertyPath: Skills.Array.data[2].SkillName
+      value: upper_hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[3].BodyInput
+      value: jkl
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
       propertyPath: Skills.Array.data[3].SkillName
-      value: spider_shake_punch
+      value: squat_down
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[4].BodyInput
-      value: 
+      value: uij
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[4].SkillName
-      value: hawaii_shake
+      value: upper_hand_and_leg_R
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].BodyInput
-      value: k
+      value: uil
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].SkillName
-      value: subject_three
+      value: upper_hand_and_leg_L
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1807,42 +1945,72 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[6].SkillName
-      value: thomas_spin
+      value: spider_shake_punch
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[7].BodyInput
-      value: jl
-      objectReference: {fileID: 0}
-    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
-        type: 3}
-      propertyPath: Skills.Array.data[7].SkillName
-      value: sukarno
-      objectReference: {fileID: 0}
-    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
-        type: 3}
-      propertyPath: Skills.Array.data[8].BodyInput
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
+      propertyPath: Skills.Array.data[7].SkillName
+      value: hawaii_shake
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[8].BodyInput
+      value: k
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
       propertyPath: Skills.Array.data[8].SkillName
-      value: rotate
+      value: subject_three
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[9].BodyInput
-      value: jl
+      value: ui
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[9].SkillName
+      value: thomas_spin
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[10].BodyInput
+      value: jl
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[10].SkillName
+      value: sukarno
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[11].BodyInput
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[11].SkillName
+      value: rotate
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[12].BodyInput
+      value: jl
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: Skills.Array.data[12].SkillName
       value: jumping
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.size
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1862,37 +2030,42 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[3].key
-      value: upper_hand_and_leg
+      value: upper_hand_and_leg_R
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[4].key
+      value: upper_hand_and_leg_L
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[5].key
       value: hawaii_shake
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[0].BodyInput.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[1].BodyInput.Array.size
-      value: 3
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[2].BodyInput.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
-        type: 3}
-      propertyPath: Skills.Array.data[3].BodyInput.Array.size
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
+      propertyPath: Skills.Array.data[3].BodyInput.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
       propertyPath: Skills.Array.data[5].BodyInput.Array.size
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1902,12 +2075,12 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[7].BodyInput.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[8].BodyInput.Array.size
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1917,12 +2090,12 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[0].BodyInput.Array.data[0]
-      value: 117
+      value: 105
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[1].BodyInput.Array.data[0]
-      value: 106
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1937,12 +2110,12 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[3].BodyInput.Array.data[0]
-      value: 117
+      value: 106
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[5].BodyInput.Array.data[0]
-      value: 107
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1952,22 +2125,22 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[7].BodyInput.Array.data[0]
-      value: 106
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[8].BodyInput.Array.data[0]
-      value: jl
+      value: 107
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: Skills.Array.data[9].BodyInput.Array.data[0]
-      value: 106
+      value: 117
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.size
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -1987,6 +2160,11 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[4].value.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[5].value.Array.size
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
@@ -1997,16 +2175,26 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.data[0]
-      value: upper_hand
+      value: upper_hand_R
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.data[1]
-      value: squat_down
+      value: upper_hand_L
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.data[2]
+      value: upper_hand
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.data[3]
+      value: squat_down
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[0].value.Array.data[4]
       value: upper_hand_and_leg
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
@@ -2047,7 +2235,22 @@ PrefabInstance:
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
       propertyPath: CanUpgrade.dictionary.Array.data[4].value.Array.data[0]
+      value: rotate
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[4].value.Array.data[1]
+      value: jumping
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[5].value.Array.data[0]
       value: subject_three
+      objectReference: {fileID: 0}
+    - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
+        type: 3}
+      propertyPath: CanUpgrade.dictionary.Array.data[5].value.Array.data[1]
+      value: jumping
       objectReference: {fileID: 0}
     - target: {fileID: 924996410738987363, guid: c849792b44eb54346b31222a91c793ed,
         type: 3}
@@ -2311,13 +2514,16 @@ SceneRoots:
   m_Roots:
   - {fileID: 410087041}
   - {fileID: 832575519}
+  - {fileID: 95858231}
   - {fileID: 1638203142}
   - {fileID: 1857558487}
+  - {fileID: 82856815}
   - {fileID: 3405114930901431060}
   - {fileID: 1012951681}
   - {fileID: 5293273505817488601}
-  - {fileID: 8074644407010778774}
   - {fileID: 3341378479881779529}
   - {fileID: 6108422474604098217}
+  - {fileID: 956875956}
+  - {fileID: 8074644407010778774}
   - {fileID: 1760733507}
   - {fileID: 784648893}

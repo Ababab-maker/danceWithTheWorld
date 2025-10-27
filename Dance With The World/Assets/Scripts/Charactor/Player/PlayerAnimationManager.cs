@@ -26,51 +26,85 @@ public class PlayerAnimationManager : MonoBehaviour
     {
         if (stageName == "null")
             return;
-        
-        if(animator.GetCurrentAnimatorStateInfo(0).IsTag("final"))
+
+        if (animator.GetCurrentAnimatorStateInfo(0).IsTag("final"))
             return;
-        
+
         switch (stageName)
         {
-            case "upper_hand":
-                if(CheckStateWithTag("final","Dance_W"))
+            case "upper_hand_R":
+                if (CheckStateWithTag("final", "Dance_W"))
                     PlayAnimationBack();
-                
-                animator.Play("New State", 4);//Dance_W_L
-                animator.Play("New State", 5);//Dance_W_L
-                animator.Play("New State", 6);//Dance_W_L
-                animator.Play("New State", 7);//Dance_W
-                
+
+                animator.Play("New State", 4); //Dance_W_L
+                animator.Play("New State", 5); //Dance_W_L
+                animator.Play("New State", 6); //Dance_W_L
+                animator.Play("New State", 7); //Dance_W
+
+                PlayAnimation("upper_hand_R");
+                break;
+            case "upper_hand_L":
+                if (CheckStateWithTag("final", "Dance_W"))
+                    PlayAnimationBack();
+
+                animator.Play("New State", 4); //Dance_W_L
+                animator.Play("New State", 5); //Dance_W_L
+                animator.Play("New State", 6); //Dance_W_L
+                animator.Play("New State", 7); //Dance_W
+
+                PlayAnimation("upper_hand_L");
+                break;
+            case "upper_hand":
+                if (CheckStateWithTag("final", "Dance_W"))
+                    PlayAnimationBack();
+
+                animator.Play("New State", 4); //Dance_W_L
+                animator.Play("New State", 5); //Dance_W_L
+                animator.Play("New State", 6); //Dance_W_L
+                animator.Play("New State", 7); //Dance_W
+
                 PlayAnimation("upper_hand_R");
                 PlayAnimation("upper_hand_L");
                 break;
             case "squat_down":
-                if(CheckStateWithTag("final","Dance_W"))
+                if (CheckStateWithTag("final", "Dance_W"))
                     PlayAnimationBack();
-                
-                animator.Play("New State", 7);//Dance_W
-                
-                animator.Play("New State", 2);//Dance_RH
-                animator.Play("New State", 3);//Dance_LH
-                
-                if(!CheckState("crouch","Dance_WL"))
+
+                animator.Play("New State", 7); //Dance_W
+
+                animator.Play("New State", 2); //Dance_RH
+                animator.Play("New State", 3); //Dance_LH
+
+                if (!CheckState("crouch", "Dance_WL"))
                     PlayAnimation("crouch");
                 break;
-            case "upper_hand_and_leg":
-                if(CheckStateWithTag("final","Dance_W"))
+            case "upper_hand_and_leg_R":
+                if (CheckStateWithTag("final", "Dance_W"))
                     PlayAnimationBack();
-                
-                animator.Play("New State", 7);//Dance_W
-                
-                animator.Play("New State", 6);//Dance_W_L
-                
+
+                animator.Play("New State", 7); //Dance_W
+
+                animator.Play("New State", 6); //Dance_W_L
+
                 PlayAnimation("upper_hand_R");
                 PlayAnimation("upper_hand_L");
                 PlayAnimation("upper_leg_R");
                 break;
+            case "upper_hand_and_leg_L":
+                if (CheckStateWithTag("final", "Dance_W"))
+                    PlayAnimationBack();
+
+                animator.Play("New State", 7); //Dance_W
+
+                animator.Play("New State", 6); //Dance_W_L
+
+                PlayAnimation("upper_hand_R");
+                PlayAnimation("upper_hand_L");
+                PlayAnimation("upper_leg_L");
+                break;
             case "spider_shake_punch":
                 PlayAnimationBack();
-                
+
                 PlayAnimation("spider_shake_punch");
                 break;
             case "hawaii_shake":
@@ -107,7 +141,7 @@ public class PlayerAnimationManager : MonoBehaviour
                 return;
         }
     }
-    
+
     public void SetAnimFloat(string variable, float value)
     {
         animator.SetFloat(variable, value);
