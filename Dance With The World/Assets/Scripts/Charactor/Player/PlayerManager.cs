@@ -15,8 +15,8 @@ public class PlayerManager : CharacterManager
     public KeyCode changeKey = KeyCode.Tab;
     
     public GameObject playerModel;
-    public TextMeshProUGUI modeText;
-    public TextMeshProUGUI finalSkillText;
+    //public TextMeshProUGUI modeText;
+    //public TextMeshProUGUI finalSkillText;
     
     protected override void Awake()
     {
@@ -31,7 +31,7 @@ public class PlayerManager : CharacterManager
     {
         PlayerSkillInputManager.instance.enabledSkillInput = true;
         
-        finalSkillText.text = PlayerSkillInputManager.instance.FINAL_SKILL_NAME;
+        //finalSkillText.text = PlayerSkillInputManager.instance.FINAL_SKILL_NAME;
             
         playerAnimationManager.SetAnimFloat("velocity", 0);
 
@@ -72,14 +72,14 @@ public class PlayerManager : CharacterManager
             //是否保留
             //playerAnimationManager.ResetAnimation();
             
-            if (isDancingMode)
+            /*if (isDancingMode)
             {
                 modeText.text = "Dancing mode";
             }
             else
             {
                 modeText.text = "Walking mode";
-            }
+            }*/
         }
     }
     

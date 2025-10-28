@@ -1,3 +1,6 @@
+using System;
+using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Splines;
 
@@ -8,14 +11,22 @@ public class SplineMover : MonoBehaviour
     [Header("References")]
     [SerializeField] private SplineContainer splineContainer;
     [SerializeField] private Transform movingObject;
+    [SerializeField] private bool canMove = false;
     
     [Header("Settings")]
     [SerializeField] private float duration = 5f;
+
+    private Collider collider;
     
     private bool hasTriggered = false;
     private bool isMoving = false;
     private float currentTime = 0f;
-    
+
+    private void Awake()
+    {
+        collider = GetComponent<Collider>();
+    }
+
     void Start()
     {
         // 自动查找引用
@@ -40,6 +51,9 @@ public class SplineMover : MonoBehaviour
     /// </summary>
     public void StartMovement()
     {
+        if(!canMove)
+            return;
+        
         if (splineContainer == null)
         {
             Debug.LogWarning("SplineContainer未设置！");
@@ -85,6 +99,22 @@ public class SplineMover : MonoBehaviour
         if (tangent != Vector3.zero)
         {
             movingObject.rotation = Quaternion.LookRotation(tangent.normalized);
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            canMove = true;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            canMove = false;
         }
     }
 }
