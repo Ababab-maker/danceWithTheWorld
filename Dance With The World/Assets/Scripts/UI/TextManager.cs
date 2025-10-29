@@ -17,11 +17,11 @@ public class TextManager : MonoBehaviour
 
     [Header("UI References")] 
     public GameObject flashTextObject;
-    public TextMeshProUGUI flashText;
+    public Text flashText;
     public float flashTime = 0;
     public float setFlashTime = 3f;
     public GameObject conditionedTextObject;
-    public TextMeshProUGUI conditionedText;
+    public Text conditionedText;
     public float conditionedTime = 0;
     public KeyCode conditionedKey = KeyCode.None;
 

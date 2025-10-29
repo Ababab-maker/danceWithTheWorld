@@ -46,7 +46,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
-  cameraInput: {x: 0, y: 0}
   cameraHorizontalInput: 0
   cameraVerticalInput: 0
   horizontalInput: 0
@@ -64,13 +63,102 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 48dda22c5d09d7a4aae4f885d3374523, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enabledSkillInput: 1
+  FINAL_SKILL_NAME: null
+  CurrentStage: 1
+  current: {fileID: 0}
   Skills:
-  - SkillName: Upper Hand
+  - SkillName: upper_hand_R
+    DirInput: w
+    BodyInput: i
+    Stage: 1
+    Priority: 0
+  - SkillName: upper_hand_L
+    DirInput: w
+    BodyInput: u
+    Stage: 1
+    Priority: 0
+  - SkillName: upper_hand
     DirInput: w
     BodyInput: ui
-  - SkillName: Rotation
+    Stage: 1
+    Priority: 0
+  - SkillName: squat_down
+    DirInput: s
+    BodyInput: jkl
+    Stage: 1
+    Priority: 0
+  - SkillName: upper_hand_and_leg_R
+    DirInput: w
+    BodyInput: uij
+    Stage: 1
+    Priority: 0
+  - SkillName: upper_hand_and_leg_L
+    DirInput: w
+    BodyInput: uil
+    Stage: 1
+    Priority: 0
+  - SkillName: spider_shake_punch
+    DirInput: s
+    BodyInput: ui
+    Stage: 2
+    Priority: 0
+  - SkillName: hawaii_shake
+    DirInput: ad
+    BodyInput: 
+    Stage: 2
+    Priority: 0
+  - SkillName: subject_three
     DirInput: ad
     BodyInput: k
-  - SkillName: Dance
-    DirInput: asd
-    BodyInput: uijkl
+    Stage: 2
+    Priority: 1
+  - SkillName: thomas_spin
+    DirInput: sad
+    BodyInput: ui
+    Stage: 2
+    Priority: 1
+  - SkillName: sukarno
+    DirInput: w
+    BodyInput: jl
+    Stage: 2
+    Priority: 0
+  - SkillName: rotate
+    DirInput: ad
+    BodyInput: 
+    Stage: 2
+    Priority: 1
+  - SkillName: jumping
+    DirInput: w
+    BodyInput: jl
+    Stage: 2
+    Priority: 1
+  CanUpgrade:
+    dictionary:
+    - key: null
+      value:
+      - upper_hand_R
+      - upper_hand_L
+      - upper_hand
+      - squat_down
+      - upper_hand_and_leg
+    - key: upper_hand
+      value:
+      - spider_shake_punch
+      - hawaii_shake
+      - subject_three
+    - key: squat_down
+      value:
+      - thomas_spin
+      - sukarno
+    - key: upper_hand_and_leg_R
+      value:
+      - rotate
+      - jumping
+    - key: upper_hand_and_leg_L
+      value:
+      - rotate
+      - jumping
+    - key: hawaii_shake
+      value:
+      - subject_three

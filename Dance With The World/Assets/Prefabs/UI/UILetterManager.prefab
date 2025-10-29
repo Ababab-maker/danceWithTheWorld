@@ -158,12 +158,17 @@ MonoBehaviour:
     m_RotationOrder: 4
   uiLetterPrefab: {fileID: 4071976056850036869, guid: 1338a6a2d6d20614ab4b6503f0137265,
     type: 3}
-  wSprite: {fileID: 21300000, guid: 64697b92ffa19914fb9fa02470f2d685, type: 3}
-  aSprite: {fileID: 21300000, guid: abd13b30e374d67478c5abf451b8fb99, type: 3}
-  sSprite: {fileID: 21300000, guid: 34fb201728d4bc14aaa81cd408c517a3, type: 3}
-  dSprite: {fileID: 21300000, guid: 2163a66f65645b34db46b65d84d570f7, type: 3}
+  wSprite: {fileID: 21300000, guid: 137c605350849a743b8a4644b7de27be, type: 3}
+  aSprite: {fileID: 21300000, guid: 974fd4633f76fe24b854d48b461656a1, type: 3}
+  sSprite: {fileID: 21300000, guid: 515e1722bb0b86e4bb28c0aaade52e65, type: 3}
+  dSprite: {fileID: 21300000, guid: 90bd95b9cd8e8f44ebb15453b5fa16cb, type: 3}
   uSprite: {fileID: 21300000, guid: 1d43633e7cfccd74c9b305f67f78151d, type: 3}
   iSprite: {fileID: 21300000, guid: 993e130199984954592db0a2b20f5647, type: 3}
   jSprite: {fileID: 21300000, guid: b6f6c7bc6175bc34a91961efa13050ca, type: 3}
   kSprite: {fileID: 21300000, guid: 73cbdbceeccb9734ea5d91016a93b100, type: 3}
   lSprite: {fileID: 21300000, guid: 7a9b38906965216469500923363e3972, type: 3}
+  audioSource: {fileID: 0}
+  toggleSound: {fileID: 0}
+  letterCreateSound: {fileID: 0}
+  letterFadeOutSound: {fileID: 0}
+  volume: 0.7
