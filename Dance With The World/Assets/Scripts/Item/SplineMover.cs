@@ -15,17 +15,10 @@ public class SplineMover : MonoBehaviour
     
     [Header("Settings")]
     [SerializeField] private float duration = 5f;
-
-    private Collider collider;
     
     private bool hasTriggered = false;
     private bool isMoving = false;
     private float currentTime = 0f;
-
-    private void Awake()
-    {
-        collider = GetComponent<Collider>();
-    }
 
     void Start()
     {

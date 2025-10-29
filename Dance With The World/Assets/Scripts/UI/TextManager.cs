@@ -1,6 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -16,11 +17,11 @@ public class TextManager : MonoBehaviour
 
     [Header("UI References")] 
     public GameObject flashTextObject;
-    public Text flashText;
+    public TextMeshProUGUI flashText;
     public float flashTime = 0;
     public float setFlashTime = 3f;
     public GameObject conditionedTextObject;
-    public Text conditionedText;
+    public TextMeshProUGUI conditionedText;
     public float conditionedTime = 0;
     public KeyCode conditionedKey = KeyCode.None;
 
