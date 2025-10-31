@@ -6,12 +6,12 @@ public class SelfBrokener : SkillItem
 {
     [Header("力场设置")]
     public float radius = 5f;                   // 作用半径
-    public ForceMode forceMode = ForceMode.Impulse; // 力的模式
+    public ForceMode forceMode = ForceMode.VelocityChange; // 力的模式
 
     [Header("三次力的设置")]
-    public float firstForceMagnitude = 500f;     // 第一次力的大小
-    public float secondForceMagnitude = 50f;    // 第二次力的大小
-    public float thirdForceMagnitude = 10f;      // 第三次力的大小
+    public float firstForceMagnitude = 10;     // 第一次力的大小
+    public float secondForceMagnitude = 15f;    // 第二次力的大小
+    public float thirdForceMagnitude = 5f;      // 第三次力的大小
     public float forceInterval = 0.1f;          // 力之间的间隔时间
 
     [Header("调试显示")]
@@ -21,7 +21,7 @@ public class SelfBrokener : SkillItem
 
     IEnumerator ApplyRadialForcesSequence()
     {
-        print("oooooooo");
+        //print("oooooooo");
         
         isApplyingForces = true;
 
@@ -49,17 +49,14 @@ public class SelfBrokener : SkillItem
             Rigidbody rb = hitCollider.GetComponent<Rigidbody>();
             if (rb != null && rb != GetComponent<Rigidbody>()) // 避免对自己施加力
             {
+                //print(rb.name);
                 // 计算从自身指向物体的方向
                 Vector3 directionToTarget = hitCollider.transform.position - transform.position;
-                float distance = directionToTarget.magnitude;
                 
                 // 标准化方向并应用力
                 Vector3 forceDirection = directionToTarget.normalized;
-                
-                // 根据距离添加衰减效果
-                float distanceFactor = 1 - Mathf.Clamp01(distance / radius);
-                
-                rb.AddForce(forceDirection * forceMagnitude * distanceFactor, forceMode);
+
+                rb.AddForce(forceDirection * forceMagnitude, forceMode);
             }
         }
     }
@@ -92,6 +89,11 @@ public class SelfBrokener : SkillItem
     protected override void Update()
     {
         base.Update();
+
+        /*if (Input.GetKeyDown(KeyCode.K)&& !isApplyingForces)
+        {
+            StartCoroutine(ApplyRadialForcesSequence());
+        }*/
         
     }
 

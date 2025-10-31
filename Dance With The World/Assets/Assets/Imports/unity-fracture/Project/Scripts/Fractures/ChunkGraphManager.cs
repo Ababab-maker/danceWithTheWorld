@@ -14,8 +14,6 @@ namespace Project.Scripts.Fractures
         private void OnEnable()
         {
             this.gameObject.layer = LayerMask.NameToLayer("Ground");
-            SelfBrokener selfBrokener = this.gameObject.AddComponent<SelfBrokener>();
-            selfBrokener.MoverName = "hawaii_shake";
         }
 
         public void Setup(Rigidbody[] bodies)

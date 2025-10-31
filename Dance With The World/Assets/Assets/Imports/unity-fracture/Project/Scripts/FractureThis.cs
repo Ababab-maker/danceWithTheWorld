@@ -8,7 +8,7 @@ namespace Project.Scripts.Fractures
         [SerializeField] private Anchor anchor = Anchor.Bottom;
         [SerializeField] private int chunks = 500;
         [SerializeField] private float density = 50;
-        [SerializeField] private float internalStrength = 100;
+        [SerializeField] private float internalStrength = 20;
             
         [SerializeField] private Material insideMaterial;
         [SerializeField] private Material outsideMaterial;
@@ -17,7 +17,14 @@ namespace Project.Scripts.Fractures
 
         private void Start()
         {
-            FractureGameobject();
+            ChunkGraphManager chunkGraphManager = FractureGameobject();
+            
+            SelfBrokener selfBrokener = chunkGraphManager.gameObject.AddComponent<SelfBrokener>();
+            selfBrokener.MoverName = "hawaii_shake";
+            
+            chunkGraphManager.transform.position =  transform.position;
+            chunkGraphManager.transform.SetParent(this.transform.parent);
+            
             gameObject.SetActive(false);
         }
 
