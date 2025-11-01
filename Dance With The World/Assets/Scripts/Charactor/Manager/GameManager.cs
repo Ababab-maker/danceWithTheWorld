@@ -2,10 +2,12 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public PlayerManager playerManager;
 
     [Header("Player States")]
     public bool isDancingMode;
@@ -24,6 +26,16 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        playerManager = FindObjectOfType<PlayerManager>();
         DontDestroyOnLoad(this);
+    }
+
+    public void LoadScene(int sceneIndex)
+    {
+        SceneManager.LoadScene(sceneIndex);
+        
+        playerManager.characterController.enabled = false;
+        playerManager.transform.position = Vector3.zero;
+        playerManager.characterController.enabled = true;
     }
 }

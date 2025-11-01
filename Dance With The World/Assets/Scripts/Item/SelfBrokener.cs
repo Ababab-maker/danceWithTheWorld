@@ -9,7 +9,7 @@ public class SelfBrokener : SkillItem
     public ForceMode forceMode = ForceMode.VelocityChange; // 力的模式
 
     [Header("三次力的设置")]
-    public float firstForceMagnitude = 10;     // 第一次力的大小
+    public float firstForceMagnitude = 1000000f;     // 第一次力的大小
     public float secondForceMagnitude = 15f;    // 第二次力的大小
     public float thirdForceMagnitude = 5f;      // 第三次力的大小
     public float forceInterval = 0.1f;          // 力之间的间隔时间
@@ -56,7 +56,7 @@ public class SelfBrokener : SkillItem
                 // 标准化方向并应用力
                 Vector3 forceDirection = directionToTarget.normalized;
 
-                rb.AddForce(forceDirection * forceMagnitude, forceMode);
+                rb.AddForce(-forceDirection * forceMagnitude, forceMode);
             }
         }
     }
